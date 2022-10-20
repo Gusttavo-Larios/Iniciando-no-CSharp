@@ -29,11 +29,14 @@ namespace fundamentos.Models
 
         public string NomeRepresentanteLegalDaPessoaFisica { get; set; }//Conveção -> Nomes descritivos
 
+        public decimal Altura { get; set; }
 
         //Métodos em C#
         public void Apresentar()//Conveção -> Nome de método PascalCase
         {
-            Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos");
+            DateTime DataAtual = DateTime.Now;//DateTime -> representa uma data 
+
+            Console.WriteLine($"Olá, meu nome é {Nome}, tenho {Altura} de altura e {Idade} anos de idade em {DataAtual.ToString("dd/MM/yyyy")}");
         }
     }
 }
