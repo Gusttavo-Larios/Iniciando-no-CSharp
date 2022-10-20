@@ -2,7 +2,7 @@
 using fundamentos.Models;
 
 //Instanciando classe no C#
-Pessoa pessoa = new Pessoa();
+Pessoa pessoa = new Pessoa();//Conveção -> Nome de varivável camelCase
 
 pessoa.Nome = "Maria";
 pessoa.Idade = 40;

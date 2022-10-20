@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 //Caminho lógico
 namespace fundamentos.Models
 {
-    public class Pessoa
+    //Convenção -> Nome do arquivo e da classe devem ser iguais
+    public class Pessoa//Conveção -> Nome de classe PascalCase
     {
         /*
         @ -> permite a utilização de palavras reservadas
@@ -14,21 +15,23 @@ namespace fundamentos.Models
         */
 
         //Propriedade em C#
-        public string Nome
+        public string Nome//Conveção -> Nome de propriedade PascalCase
         {
             get;
             set;
         }
 
-        public int Idade
+        public int Idade//Conveção -> Nome de propriedade PascalCase
         {
             get;
             set;
         }
+
+        public string NomeRepresentanteLegalDaPessoaFisica { get; set; }//Conveção -> Nomes descritivos
 
 
         //Métodos em C#
-        public void Apresentar()
+        public void Apresentar()//Conveção -> Nome de método PascalCase
         {
             Console.WriteLine($"Olá, meu nome é {Nome}, e tenho {Idade} anos");
         }
